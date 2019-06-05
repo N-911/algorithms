@@ -1,21 +1,22 @@
-def find_smallest(list):
-    """find  smallest element in list"""
-    smallest = list[0]
+# Finds the smallest value in an array
+def find_smallest(arr):
+    smallest = arr[0]
     smallest_index = 0
-    for x in range(len(list)):
-        if list[x] < smallest:
-            smallest = list[x]
-            smallest_index = x
-        return smallest_index
+    for i in range(1, len(arr)):
+        if arr[i] < smallest:
+            smallest_index = i
+            smallest = arr[i]
+    return smallest_index
 
 
-def choice_sort(list):
-    """sort list by choice is smallest element and moving it to the begining"""
+# Sort array
+def selection_sort(arr):
+    sorted_arr = []
+    for i in range(len(arr)):
+        # Finds the smallest element in the array and adds it to the new array
+        smallest = find_smallest(arr)
+        sorted_arr.append(arr.pop(smallest))
+    return sorted_arr
 
-    sorted_list = []
-    for x in range(len(list)):
-        smallest = find_smallest(list)
-        sorted_list.append(list.pop(smallest))
-    return sorted_list
 
-print(choice_sort([12,3,1,23,4]))
+print(selection_sort([55, 3, 16, 2, 10]))
