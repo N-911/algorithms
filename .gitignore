@@ -3,3 +3,4 @@ __pycache__/
 .cache/
 .idea
 speed_test.py
+example_1.py

@@ -11,4 +11,4 @@ def quicksort(array):
     greater = [i for i in array[1:] if i > comparable]
     return quicksort(less) + [comparable] + quicksort(greater)
 
-#print(quicksort([100, 15, 2, 3, 50, 18]))
+print(quicksort([100, 15, 2, 3, 50, 18]))
