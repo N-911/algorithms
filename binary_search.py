@@ -1,3 +1,6 @@
+import random
+
+
 def binary_search(array, number):
     """return position number in sorted!!!! array"""
     left = 0
@@ -5,7 +8,7 @@ def binary_search(array, number):
 
     while left <= right:
         middle = (left + right) // 2
-        if array[middle] == number:
+        if array[middle] == number:      # fix search index in left boundary
             return middle
         elif array[middle] < number:
             left = middle+1
@@ -14,4 +17,5 @@ def binary_search(array, number):
     return None
 
 
-print(binary_search([2, 4, 5, 7, 8], 8))
+
+print(binary_search([1,2, 2, 3, 7, 8], 2))
