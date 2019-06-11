@@ -6,16 +6,19 @@ def lcs(a, b):
     within the original sequences"""
     m = len(a)
     n = len(b)
-    f = [[0] * (m+1) for _ in range(n+1)]
+    f = [[0] * (n+1) for _ in range(m+1)]
     for i in range(m+1):
         for j in range(n+1):
-            if a[i-1] == b[j-1]:
+            if i == 0 or j == 0:
+                f[i][j] = 0
+            elif a[i-1] == b[j-1]:
                 f[i][j] = 1 + f[i-1][j-1]
             else:
                 f[i][j] = max(f[i-1][j], f[i][j-1])
+    for row in f:
+        print(*row)
+    print("- " * (n+1))
     return f[-1][-1]
 
 
-w = 'ASKSMKCKMS'
-e = 'ASDSMKCKAO'
-print(lcs(w, e))
+print(lcs("Smskms", "mcscmsa"))
