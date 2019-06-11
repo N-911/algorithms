@@ -13,4 +13,4 @@ def lis(A):
     return maximum
 
 
-print("LIS: ", lis('1231269244868458182'))
+print("LIS: ", lis('12837718268925544868458182'))

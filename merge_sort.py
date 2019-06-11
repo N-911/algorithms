@@ -2,6 +2,9 @@ import random
 
 
 def merge_sort(a: list):
+    """Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves,
+    calls itself for the two halves and then merges the two sorted halves
+    """
     if len(a) <= 1:
         return
     middle = len(a)//2
@@ -16,6 +19,7 @@ def merge_sort(a: list):
 
 
 def merge(left: list, right: list):
+    """The merge() function is used for merging two halves"""
     c = [0] * (len(left) + len(right))
     i = j = k = 0
     while i < len(left) and j < len(right):
@@ -38,7 +42,7 @@ def merge(left: list, right: list):
     return c
 
 
-s = list(range(20))
+s = list(range(10))
 random.shuffle(s)
 print(s)
 print(merge_sort(s))
