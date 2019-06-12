@@ -1,5 +1,15 @@
 # sort_algorithms
 
+#binary_search     fix !!
+
+#quicksort
+
+#equal_string
+
+
+
+#RSA
+
 
 
 
@@ -20,5 +30,13 @@
  #equal_string
  
  #search_substring_in_string
+ 
+ #Поиск подстроки в строке. Алгоритм Кнута-Морриса-Пратта
+ 
+ 
+ #algoritm heap
+ 
+ #agoritm evklida
+ 
  
  
