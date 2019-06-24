@@ -21,7 +21,7 @@ def bacpack(m, v, k):
                 F[i][j] = F[i-1][j]
 
     for row in F:
-        print(*row)
+        print(row)
 
 
 bacpack(m, v, k)
