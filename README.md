@@ -7,9 +7,7 @@
 #equal_string
 
 
-
 #RSA
-
 
 
 
@@ -26,16 +24,13 @@
  of single-character edits (insertions, deletions or substitutions) required 
  to change one word into the other"
  
-  
- #equal_string
+   #equal_string
  
  #search_substring_in_string
  
  #Поиск подстроки в строке. Алгоритм Кнута-Морриса-Пратта
- 
- 
- 
- 
+  
+  
  #algoritm heap
  
  #agoritm evklida
@@ -60,3 +55,7 @@
  #Алгоритм Диффи-Хеллмана
  
  Линейное программирование
+ 
+ #heap  heapsort
+ 
+ #hash algoritm
