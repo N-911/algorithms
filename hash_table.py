@@ -46,11 +46,7 @@ class HashTable:
         hsh = calc_hash(element)
         return self.table[hsh].search(element)
 
-
-lst = Linkedlist()
-lst.add(5)
-lst.search(5)
-
 tt = HashTable()
+tt.add(15)
 
-print(tt.add(22))
+print(tt.search(15))
